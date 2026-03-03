@@ -1,4 +1,6 @@
 import { genericsIntro } from "./generics/generics";
+import { genericsWithInterface } from "./generics/genericsWithInterfaces";
+import { genericUseExample } from "./generics/genericUseExample";
 import "./style.css";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
@@ -7,4 +9,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
   </div>
 `;
 
+await genericUseExample();
 genericsIntro();
+genericsWithInterface();
